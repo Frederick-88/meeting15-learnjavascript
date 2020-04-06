@@ -37,7 +37,13 @@ console.log(nama);
 console.log(`panjang variable nama adalah ${nama.length}`);
 console.log(`karakter kedua adalah ${nama.charAt(1)}`);
 console.log(`fungsi charAt dengan -1 adalah ${nama.charAt(-1)}`);
-console.log(`fungsi charAt dengan 10 adalah ${nama.charAt(10    )}`);
+console.log(`fungsi charAt dengan 10 adalah ${nama.charAt(10)}`);
+
+let namaPanjang = `${nama} Huang`;
+console.log(namaPanjang);
+console.log(namaPanjang.toUpperCase());
+
+
 
 
 
