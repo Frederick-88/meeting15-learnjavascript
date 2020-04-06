@@ -92,10 +92,10 @@ console.log(namaSiswaGlints.sort());
 // console.log(); --------------
 
 // CARA CEK ISI DARI namaSiswaGlints
-
-// namaSiswaGlints.forEach((value,index,array) =>{
-//     console.log(value,index,array);
-// })
+debugger;
+namaSiswaGlints.forEach((value,index,array) =>{
+    console.log(value,index,array);
+})
 
 
 // LEARN FOR EACH
@@ -121,6 +121,11 @@ const newSiswa={
 }
 asalSiswa.push(newSiswa)
 console.log(asalSiswa);
+
+// DELETE DATA
+asalSiswa.pop()
+console.log(asalSiswa);
+
 
 // CONTOH ARRAY FIND
 const pencarian = asalSiswa.find((nama,index,array) => {
