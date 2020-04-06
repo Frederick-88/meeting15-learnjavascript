@@ -1,7 +1,21 @@
-# COBA COBA
-## INI ADALAH CODEKU
-<br>
-
+# HELLO, THIS IS HOW YOU MAKE CONTACTS WITH JAVASCRIPT
+## THIS IS THE CODE FOR HTML FILE
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <script src="script.js"></script> -->
+    <script src="project.js"></script>
+</body>
+</html>
+```
+## AND THIS IS THE CODE FOR JAVASCRIPT FILE
 ```javascript
 const listContact = [{
         id: 1,
@@ -77,4 +91,16 @@ const filter = modifyData.filter((data,index,array) => {
     return false;
 });
 console.log(filter);
+
+// CARA NAMPILIN SEMUA CONTACT SECARA FULL
+const showContacts = (nampilin) => {
+    for(let index=0; index < nampilin.length; index++){
+        const nampilinFix = nampilin[index];
+        console.log(`No ID:${nampilinFix.id} Nama:${nampilinFix.name} No Telp:${nampilinFix.phone} Email:${nampilinFix.email} Asal:${nampilinFix.asal}`);
+    }
+}
+showContacts(modifyData)
+// MODIFYDATA INI AKAN MEREPLACE NAMPILIN
 ```
+
+## HAVE FUN AND ENJOY.
