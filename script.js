@@ -78,9 +78,96 @@ for(let nomor in namaSiswaImpactByte){
     console.log(nomor);
 }
 
-// LEARN ARRAY METHOD
+// LEARN ARRAY METHOD - PENGGABUNGAN ARRAY
 const namaSiswaUIB = ['Agnes','Alvi','Vincent','Bill'];
-const namaSiswaGlints = [namaSiswaUIB,namaSiswaImpactByte]
+const namaSiswaGlints = namaSiswaUIB.concat(namaSiswaImpactByte);
+console.log(namaSiswaGlints);
+console.log(namaSiswaUIB);
+
+// LEARN ARRAY SORTING
+// namaSiswaGlints.sort((a, b) => a - b)
+console.log(namaSiswaGlints.sort());
+
+// LEARN ARRAY JOIN
+// console.log(); --------------
+
+// CARA CEK ISI DARI namaSiswaGlints
+
+// namaSiswaGlints.forEach((value,index,array) =>{
+//     console.log(value,index,array);
+// })
+
+
+// LEARN FOR EACH
+namaSiswaGlints.forEach ((siswa) => {
+    console.log(`nama siswa : ${siswa}`)
+})
+
+// MAP
+const asalSiswa = namaSiswaGlints.map((nama,index) =>{
+    return{
+        noId: index + 1,
+        name : nama,
+        asal: 'Batam'
+    }
+});
+console.log(asalSiswa);
+
+// NAMBAHIN DATA KEDALAM ASAL SISWA
+const newSiswa={
+    noId: 9,
+    name: 'Budi',
+    asal:'Medan'
+}
+asalSiswa.push(newSiswa)
+console.log(asalSiswa);
+
+// CONTOH ARRAY FIND
+const pencarian = asalSiswa.find((nama,index,array) => {
+    if(nama.name == "Frederick")
+    return true;
+        return false;
+});
+console.log(pencarian);
+
+// CONTOH ARRAY FILTER
+// const pencarian = asalSiswa.filter((nama,index,array) => {
+//     if(nama.asal == "Medan")
+//     return true;
+//         return false;
+// });
+// console.log(pencarian);
+
+// PROPERTY VALUE SHORTHAND - PEMENDEKAN INPUT DI CONST PERSON
+const name = "Babe";
+const lastName = "Gokil";
+const kelasnya = "businessman"
+
+const person = {
+    name: name,
+    lastName: lastName,
+    kelas: kelasnya
+}
+console.log(person.name);
+console.log(person.lastName);
+
+// OBJECT ASSIGN - GABUNGIN OBJECT
+const bodyMeasure = {
+    height : '170cm',
+    weight : '80kg',
+    kelas : 'pekerja',
+}
+const databaru = {
+    tanggalLahir : '5 November'
+}
+
+const personWithMeasure = Object.assign({}, person, bodyMeasure, databaru);
+console.log(personWithMeasure);
+
+
+
+
+
 
 
 
